@@ -13,6 +13,15 @@ from pathlib import Path
 
 import gradio as gr
 
+try:  # Hugging Face ZeroGPU hardware needs at least one @spaces.GPU function; the agent itself runs on CPU.
+    import spaces
+
+    @spaces.GPU
+    def _zerogpu_probe() -> None:
+        return None
+except ImportError:
+    pass
+
 from ied.llm import Ledger, build_router
 from ied.pipeline import (CheckpointIncomplete, analyse, load_hypotheses, load_interview, load_interviews, memo,
                           next_questions, require_decisions, save_run)

@@ -1,0 +1,14 @@
+# i03 - Sofia, coffee kiosk in a train station, 3 staff (SYNTHETIC)
+Interviewer: How do you organise shifts?
+Sofia: There are three of us. The rota is the same every week, I change it maybe once a month.
+Sofia: It takes me ten minutes. It's not a problem at all.
+Interviewer: What about last-minute changes?
+Sofia: If someone is sick I just work the shift myself. That's the deal when you're this small.
+Interviewer: Tell me about the last time that happened.
+Sofia: Two weeks ago, I did a double shift. Tiring, but it's once in a while.
+Interviewer: Have you ever looked for an app?
+Sofia: No. I would not pay a monthly fee for three people, even five euros feels like too much.
+Interviewer: Can your staff swap among themselves?
+Sofia: They already do. They tell me after, and that's fine, I trust them completely.
+Interviewer: Anything that does annoy you about staffing?
+Sofia: Hiring. Finding someone reliable for weekends takes me weeks. That's my real headache.

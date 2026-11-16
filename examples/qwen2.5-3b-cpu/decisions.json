@@ -1,0 +1,10 @@
+[
+  {"hypothesis_id": "H1", "decision": "reject",
+   "reason": "Only 3 of 8 reach 3 hours; Tomas, Claire, Ravi and Sofia are at 10 min to 2 h. Building the rota is not the pain."},
+  {"hypothesis_id": "H2", "decision": "accept",
+   "reason": "Real losses already happened: Marc lost bread sales, Ravi refunded 230 EUR, Jonas lost a shift lead. Some quotes the agent put here are really about H4."},
+  {"hypothesis_id": "H3", "decision": "doubt",
+   "reason": "Three people already pay 35-89 EUR (see the money lines the model missed), but the small shops refuse. Price may depend on size, not on swaps."},
+  {"hypothesis_id": "H4", "decision": "reject",
+   "reason": "Most want a check, not freedom: Marc, Claire, Lea mornings, Ravi wants both sides to confirm. Several 'for' quotes are about price, not approval."}
+]

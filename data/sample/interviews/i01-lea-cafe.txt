@@ -1,0 +1,20 @@
+# i01 - Lea, owner of a 12-seat specialty cafe, 6 part-time staff (SYNTHETIC)
+Interviewer: Thanks for making time. Can you walk me through how the rota gets made each week?
+Lea: Sunday evening, kitchen table, a paper grid and my phone. Everyone sends me their availability on WhatsApp.
+Interviewer: How long does that take?
+Lea: The grid itself, maybe an hour and a half. It's the messages around it that eat the week.
+Interviewer: Tell me about the last time something changed after you published it.
+Lea: Last Tuesday Hugo texted at 6:40 in the morning that he had a fever, and I open at 7:30.
+Lea: I called four people before Sarah picked up, and I opened alone for the first hour.
+Interviewer: How often does that happen?
+Lea: Two or three times a week there's some change. Sick, exams, a bus strike.
+Lea: Honestly the Sunday grid is fine, it's the 6 a.m. phone calls that make me want to sell the place.
+Interviewer: Have you tried any software for this?
+Lea: I paid for one of those scheduling apps for three months, about 35 euros a month, then cancelled.
+Interviewer: Why did you cancel?
+Lea: It was built for restaurants with forty staff. Too many buttons, and my students never installed it.
+Interviewer: If staff found their own replacement, would you need to approve it?
+Lea: For the morning shift, yes, I need someone who can run the machine alone. Afternoons I don't care.
+Lea: If two baristas swap, I just want to know by the evening before.
+Interviewer: Anything else about this I should know?
+Lea: I'd keep paying for something if it just fixed the morning panic. I don't need payroll from it.

@@ -1,0 +1,17 @@
+# i02 - Marc, artisan bakery with two shops, 14 staff (SYNTHETIC)
+Interviewer: How do you plan who works when?
+Marc: My wife does it in a spreadsheet. Every Thursday, it takes her most of the afternoon, three to four hours.
+Marc: Two shops means two rotas, and the bakers start at 4 a.m., so the constraints are tight.
+Interviewer: What happened the last time someone couldn't come?
+Marc: A baker didn't show up in October. No message. We lost the morning bread for the second shop.
+Marc: That cost us maybe 600 euros in sales, plus the customers who didn't come back.
+Interviewer: How do changes get handled now?
+Marc: Staff post in a WhatsApp group and my wife confirms every change by hand.
+Interviewer: Would you let them swap without her confirming?
+Marc: Never for the bakers. A swap that breaks the 11-hour rest rule is our liability, not theirs.
+Marc: For the counter staff, maybe, if the system checks the rules.
+Interviewer: Do you pay for any tools today?
+Marc: We pay 49 euros a month for the till system and 30 for the accountant's portal. Nothing for scheduling.
+Interviewer: What would make you pay for scheduling?
+Marc: If it checked the labour rules automatically, I would pay more than 20 euros, that's not the issue.
+Marc: The issue is my wife trusting it. She has tried two apps and gone back to the spreadsheet both times.

@@ -1,0 +1,15 @@
+# i04 - Tomas, brunch restaurant, 18 staff incl. kitchen (SYNTHETIC)
+Interviewer: How does scheduling work for you?
+Tomas: I use a scheduling app, I pay 89 euros a month for it, and I've had it for two years.
+Interviewer: How much time do you still spend on the rota?
+Tomas: Building it, about an hour a week now, the app copies last week. Before the app it was a full evening.
+Interviewer: What is still painful?
+Tomas: Swaps. The app lets people offer shifts, but half my staff ignore the notifications.
+Tomas: Last Saturday two people swapped in the app and nobody noticed one of them was a trainee. We were short at the grill.
+Interviewer: Do you approve swaps?
+Tomas: I switched approvals off last year because it was too much clicking. That Saturday made me regret it.
+Interviewer: Would a cheaper tool that only handles swaps interest you?
+Tomas: I already pay for the big one. I won't add another subscription just for swaps.
+Interviewer: What would make you switch?
+Tomas: If it understood skills, like who can work the grill alone, and nagged people until the shift is covered.
+Tomas: I would switch tomorrow for that, even at the same price.

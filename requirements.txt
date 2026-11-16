@@ -1,0 +1,6 @@
+pydantic>=2.6
+requests>=2.31
+gradio>=4.44
+pytest>=8
+# optional, for the fully local open-weight back-end (no API key, no internet at run time):
+# llama-cpp-python>=0.3

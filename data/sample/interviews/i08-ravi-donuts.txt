@@ -1,0 +1,13 @@
+# i08 - Ravi, doughnut shop with delivery, 11 staff (SYNTHETIC)
+Interviewer: How do you build the rota?
+Ravi: I export last week from the till, adjust it in a spreadsheet, about two hours on Sunday.
+Interviewer: What breaks during the week?
+Ravi: Delivery riders. They swap between themselves on a group chat and I find out when an order is late.
+Ravi: Last Friday we refunded 14 orders, around 230 euros, because two riders both thought the other was coming.
+Interviewer: So do you want to approve swaps?
+Ravi: I don't want to approve them, I want to know they're real. A swap should only count when both people confirm.
+Interviewer: Have you paid for anything to fix it?
+Ravi: I pay a student 50 euros a month to be the person who checks the chat every morning.
+Ravi: If software did that job I'd pay the same 50 and keep the student for packing.
+Interviewer: Anything you would not want?
+Ravi: Another app for staff to install. They have WhatsApp, that's it. Anything else they ignore.

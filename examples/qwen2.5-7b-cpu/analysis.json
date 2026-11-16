@@ -1,0 +1,1592 @@
+{
+  "n_interviews": 8,
+  "processed": [
+    "i01-lea-cafe",
+    "i02-marc-bakery",
+    "i03-sofia-kiosk",
+    "i04-tomas-brunch",
+    "i05-amina-tea",
+    "i06-jonas-roastery",
+    "i07-claire-crepe",
+    "i08-ravi-donuts"
+  ],
+  "unused_numbers": [
+    {
+      "interview_id": "i02-marc-bakery",
+      "line": 13,
+      "text": "Marc: We pay 49 euros a month for the till system and 30 for the accountant's portal. Nothing for scheduling."
+    },
+    {
+      "interview_id": "i03-sofia-kiosk",
+      "line": 7,
+      "text": "Sofia: Two weeks ago, I did a double shift. Tiring, but it's once in a while."
+    },
+    {
+      "interview_id": "i05-amina-tea",
+      "line": 3,
+      "text": "Amina: Then I redo it at least twice during the week. Altogether it's four or five hours, easily."
+    },
+    {
+      "interview_id": "i05-amina-tea",
+      "line": 11,
+      "text": "Amina: I bought a big whiteboard and magnets, 60 euros. It helps in the shop but not when I'm at home."
+    },
+    {
+      "interview_id": "i06-jonas-roastery",
+      "line": 4,
+      "text": "Jonas: She once said Sunday nights are gone for it. So, three hours maybe."
+    },
+    {
+      "interview_id": "i06-jonas-roastery",
+      "line": 7,
+      "text": "Jonas: Replacing her took six weeks and a 400-euro job ad. That's when I realised it was a problem."
+    }
+  ],
+  "kept": [
+    {
+      "hypothesis_id": "H1",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "The grid itself, maybe an hour and a half.",
+      "line": 4,
+      "interview_id": "i01-lea-cafe",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Lea states that the grid itself takes 'maybe an hour and a half,' which is less than the 3 hours mentioned in the hypothesis. This suggests that the time spent on the grid itself is not 3 or more hours, but rather less."
+    },
+    {
+      "hypothesis_id": "H2",
+      "kind": "pain",
+      "strength": "said",
+      "supports": true,
+      "quote": "Two or three times a week there's some change. Sick, exams, a bus strike.",
+      "line": 9,
+      "interview_id": "i01-lea-cafe",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Lea mentions that there are two or three changes per week due to sick calls, exams, and a bus strike. This supports the hypothesis that last-minute changes (sick calls, swaps, no-shows) happen frequently and can disrupt the weekly rota."
+    },
+    {
+      "hypothesis_id": "H2",
+      "kind": "pain",
+      "strength": "said",
+      "supports": true,
+      "quote": "Honestly the Sunday grid is fine, it's the 6 a.m. phone calls that make me want to sell the place.",
+      "line": 10,
+      "interview_id": "i01-lea-cafe",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Lea explicitly states that the 6 a.m. phone calls, which are likely referring to last-minute changes, are the issue that causes her distress. She even says it makes her want to sell the place, indicating a significant negative impact. The Sunday grid, on the other hand, is described as 'fine', suggesting that last-minute changes are the problem, not the regular schedule."
+    },
+    {
+      "hypothesis_id": "H3",
+      "kind": "counter",
+      "strength": "paid",
+      "supports": false,
+      "quote": "I paid for one of those scheduling apps for three months, about 35 euros a month, then cancelled.",
+      "line": 12,
+      "interview_id": "i01-lea-cafe",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Lea paid 35 euros a month for a scheduling app, which is more than 20 euros. However, she cancelled the subscription after three months, indicating she did not continue to pay for it."
+    },
+    {
+      "hypothesis_id": "H4",
+      "kind": "pain",
+      "strength": "said",
+      "supports": true,
+      "quote": "For the morning shift, yes, I need someone who can run the machine alone. Afternoons I don't care.",
+      "line": 16,
+      "interview_id": "i01-lea-cafe",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Lea explicitly states that she does not need to approve shift swaps for the afternoon shift. This directly supports the hypothesis that owners are willing to let staff swap shifts among themselves without approving each swap."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "workaround",
+      "strength": "did",
+      "supports": true,
+      "quote": "Every Thursday, it takes her most of the afternoon, three to four hours.",
+      "line": 2,
+      "interview_id": "i02-marc-bakery",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "The quote states that it takes Marc's wife three to four hours to plan the staff rotas every Thursday. This is more than three hours, which supports the hypothesis."
+    },
+    {
+      "hypothesis_id": "H2",
+      "kind": "pain",
+      "strength": "did",
+      "supports": true,
+      "quote": "A baker didn't show up in October. No message. We lost the morning bread for the second shop.",
+      "line": 5,
+      "interview_id": "i02-marc-bakery",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Marc describes a specific instance where a baker did not show up, resulting in lost morning bread for the second shop. This supports the idea that last-minute changes can have a negative impact on the operation."
+    },
+    {
+      "hypothesis_id": "H2",
+      "kind": "pain",
+      "strength": "did",
+      "supports": true,
+      "quote": "That cost us maybe 600 euros in sales, plus the customers who didn't come back.",
+      "line": 6,
+      "interview_id": "i02-marc-bakery",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "The quote indicates a significant financial loss due to a last-minute change (the baker not showing up). This supports the hypothesis that last-minute changes can be costly, as it resulted in a loss of sales and potential customer dissatisfaction."
+    },
+    {
+      "hypothesis_id": "H3",
+      "kind": "willingness_to_pay",
+      "strength": "said",
+      "supports": true,
+      "quote": "If it checked the labour rules automatically, I would pay more than 20 euros, that's not the issue.",
+      "line": 15,
+      "interview_id": "i02-marc-bakery",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Marc states that he would pay more than 20 euros if the tool checked the labour rules automatically. This directly supports the hypothesis that owners will pay 20 EUR or more for a tool that handles shift swaps automatically, as checking labour rules is a feature of shift swap handling."
+    },
+    {
+      "hypothesis_id": "H4",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "Never for the bakers. A swap that breaks the 11-hour rest rule is our liability, not theirs.",
+      "line": 10,
+      "interview_id": "i02-marc-bakery",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Marc explicitly states that he would never let the bakers swap shifts without his wife confirming, which directly contradicts the hypothesis that owners are willing to let staff swap shifts without approval."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "It's not a problem at all.",
+      "line": 3,
+      "interview_id": "i03-sofia-kiosk",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Sofia states that organizing the rota is not a problem and takes only ten minutes, which is less than the threshold of 3 hours per week."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "The rota is the same every week, I change it maybe once a month.",
+      "line": 2,
+      "interview_id": "i03-sofia-kiosk",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Sofia states that the rota is the same every week and she changes it maybe once a month. This suggests that she does not spend a significant amount of time (more than 3 hours a week) on building and fixing staff rotas."
+    },
+    {
+      "hypothesis_id": "H2",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "If someone is sick I just work the shift myself.",
+      "line": 5,
+      "interview_id": "i03-sofia-kiosk",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Sofia's statement indicates that she handles last-minute changes (in this case, a sick call) by working the shift herself. This suggests that last-minute changes do not significantly impact her, as she can easily accommodate them without additional effort or disruption to her schedule."
+    },
+    {
+      "hypothesis_id": "H3",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "I would not pay a monthly fee for three people, even five euros feels like too much.",
+      "line": 9,
+      "interview_id": "i03-sofia-kiosk",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Sofia explicitly states that she would not pay a monthly fee for three people, even at five euros. This is below the 20 EUR threshold mentioned in the hypothesis. Therefore, this statement makes the hypothesis less likely."
+    },
+    {
+      "hypothesis_id": "H4",
+      "kind": "workaround",
+      "strength": "did",
+      "supports": true,
+      "quote": "They already do. They tell me after, and that's fine, I trust them completely.",
+      "line": 11,
+      "interview_id": "i03-sofia-kiosk",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Sofia explicitly states that her staff already swap shifts among themselves and that she trusts them to do so without her approval. This directly supports the hypothesis that owners are willing to let staff swap shifts without individual approval."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "counter",
+      "strength": "did",
+      "supports": false,
+      "quote": "Building it, about an hour a week now, the app copies last week.",
+      "line": 4,
+      "interview_id": "i04-tomas-brunch",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Tomas states that he spends about an hour a week building the rota, which is less than the 3 hours mentioned in the hypothesis. The app copies last week's rota, reducing the time needed."
+    },
+    {
+      "hypothesis_id": "H2",
+      "kind": "pain",
+      "strength": "said",
+      "supports": true,
+      "quote": "Swaps. The app lets people offer shifts, but half my staff ignore the notifications.",
+      "line": 6,
+      "interview_id": "i04-tomas-brunch",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Tomas mentions that half of his staff ignore the notifications for swaps, which suggests that last-minute changes (like swaps) are not being handled effectively. This implies that last-minute changes are causing issues, which aligns with the hypothesis that they hurt more than building the weekly rota."
+    },
+    {
+      "hypothesis_id": "H2",
+      "kind": "pain",
+      "strength": "did",
+      "supports": true,
+      "quote": "Last Saturday two people swapped in the app and nobody noticed one of them was a trainee. We were short at the grill.",
+      "line": 7,
+      "interview_id": "i04-tomas-brunch",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Tomas mentions that a swap in the app led to a short staff situation at the grill, which indicates that last-minute changes can cause issues. This supports the hypothesis that last-minute changes hurt more than building the weekly rota."
+    },
+    {
+      "hypothesis_id": "H3",
+      "kind": "willingness_to_pay",
+      "strength": "paid",
+      "supports": true,
+      "quote": "I pay 89 euros a month for it, and I've had it for two years.",
+      "line": 2,
+      "interview_id": "i04-tomas-brunch",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "The quote states that Tomas pays 89 euros a month for the scheduling app, which is more than 20 euros. This directly supports the hypothesis that owners will pay 20 EUR or more per month for a tool that handles shift swaps automatically."
+    },
+    {
+      "hypothesis_id": "H4",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "I switched approvals off last year because it was too much clicking.",
+      "line": 9,
+      "interview_id": "i04-tomas-brunch",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Tomas mentions that he switched off shift swap approvals because it was too much clicking. This suggests that he is not willing to let staff swap shifts without his approval, as it requires too much effort for him."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "I would pay around 15 euros a month. Twenty-five would be too much for us this year.",
+      "line": 13,
+      "interview_id": "i05-amina-tea",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Amina states that she would pay around 15 euros a month for a better system, which is less than 25 euros. This suggests that she does not currently spend 25 euros or more on staff rotas, and thus does not spend 3 or more hours a week on this task. Therefore, her statement is against the hypothesis."
+    },
+    {
+      "hypothesis_id": "H2",
+      "kind": "pain",
+      "strength": "did",
+      "supports": true,
+      "quote": "Last week three people asked for changes on the same day. I spent my whole break on the phone.",
+      "line": 7,
+      "interview_id": "i05-amina-tea",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Amina mentions that last week, three people asked for changes on the same day, and she spent her whole break on the phone. This supports the hypothesis that last-minute changes can be time-consuming and disruptive, potentially hurting the process of building the weekly rota."
+    },
+    {
+      "hypothesis_id": "H3",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "I would pay around 15 euros a month. Twenty-five would be too much for us this year.",
+      "line": 13,
+      "interview_id": "i05-amina-tea",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Amina states that she would pay around 15 euros a month, which is less than the 20 euros threshold mentioned in the hypothesis. She also mentions that 25 euros would be too much, indicating that 20 euros is even higher than what she is willing to pay."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "workaround",
+      "strength": "said",
+      "supports": true,
+      "quote": "Ines handles it. Last month she worked eleven days in a row covering gaps, and then she quit.",
+      "line": 6,
+      "interview_id": "i06-jonas-roastery",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "The quote indicates that Ines worked eleven days in a row to cover gaps, which suggests that the cafe and bakery likely spend a significant amount of time managing staff rotas. However, it does not specify the exact number of hours Jonas or the cafe spends on this task. While it implies that a substantial amount of time is spent, it does not confirm that it is 3 or more hours a week."
+    },
+    {
+      "hypothesis_id": "H3",
+      "kind": "willingness_to_pay",
+      "strength": "said",
+      "supports": true,
+      "quote": "I'd pay 30 a month without thinking if it keeps my next shift lead from burning out.",
+      "line": 11,
+      "interview_id": "i06-jonas-roastery",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Jonas explicitly states that he would pay 30 EUR per month for the tool, which is more than the 20 EUR threshold mentioned in the hypothesis. He also mentions that this is without thinking, indicating a willingness to pay this amount."
+    },
+    {
+      "hypothesis_id": "H4",
+      "kind": "willingness_to_pay",
+      "strength": "said",
+      "supports": true,
+      "quote": "Yes, as long as the shift lead gets a summary. Approving each one is exactly what burned Ines out.",
+      "line": 13,
+      "interview_id": "i06-jonas-roastery",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Jonas explicitly states that staff should be allowed to swap shifts without approval, as long as the shift lead gets a summary. This directly supports the hypothesis that owners are willing to let staff swap shifts among themselves without approving each swap."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "In summer it's chaos, in winter it's me and one person. The summer rota takes me maybe two hours a week.",
+      "line": 2,
+      "interview_id": "i07-claire-crepe",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Claire states that the summer rota takes her 'maybe two hours a week.' This is less than the 3 or more hours required by the hypothesis."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "A free calendar app.",
+      "line": 8,
+      "interview_id": "i07-claire-crepe",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Claire mentions using a free calendar app, which suggests she does not spend time manually building and fixing staff rotas. This implies she does not spend 3 or more hours a week on this task."
+    },
+    {
+      "hypothesis_id": "H2",
+      "kind": "pain",
+      "strength": "said",
+      "supports": true,
+      "quote": "Summer staff are tourists' kids, they cancel by text all the time.",
+      "line": 4,
+      "interview_id": "i07-claire-crepe",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Claire mentions that summer staff, who are tourists' kids, cancel by text all the time. This suggests that there are frequent last-minute changes, which supports the hypothesis that last-minute changes (sick calls, swaps, no-shows) hurt more than building the weekly rota."
+    },
+    {
+      "hypothesis_id": "H3",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "I wouldn't pay for scheduling, the season is only four months.",
+      "line": 8,
+      "interview_id": "i07-claire-crepe",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Claire explicitly states that she wouldn't pay for scheduling software, which is below the 20 EUR per month threshold mentioned in the hypothesis. This directly contradicts the hypothesis."
+    },
+    {
+      "hypothesis_id": "H4",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "No. I've had a swap where the replacement was a friend who had never worked here. Never again.",
+      "line": 10,
+      "interview_id": "i07-claire-crepe",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Claire explicitly states that she would not let staff swap shifts freely and provides an example of a bad experience with a friend who had never worked there. This directly contradicts the hypothesis that owners are willing to let staff swap shifts without approval."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "counter",
+      "strength": "did",
+      "supports": false,
+      "quote": "I export last week from the till, adjust it in a spreadsheet, about two hours on Sunday.",
+      "line": 2,
+      "interview_id": "i08-ravi-donuts",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Ravi states that he spends about two hours on Sunday adjusting the rota. This is less than the three or more hours mentioned in the hypothesis."
+    },
+    {
+      "hypothesis_id": "H2",
+      "kind": "pain",
+      "strength": "did",
+      "supports": true,
+      "quote": "Last Friday we refunded 14 orders, around 230 euros, because two riders both thought the other was coming.",
+      "line": 5,
+      "interview_id": "i08-ravi-donuts",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "The evidence mentions that 14 orders were refunded due to a misunderstanding between two riders. This suggests that last-minute changes (in this case, a swap of delivery riders) can lead to issues and financial losses. This supports the hypothesis that last-minute changes hurt more than building the weekly rota."
+    },
+    {
+      "hypothesis_id": "H3",
+      "kind": "counter",
+      "strength": "paid",
+      "supports": false,
+      "quote": "I pay a student 50 euros a month to be the person who checks the chat every morning.",
+      "line": 9,
+      "interview_id": "i08-ravi-donuts",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "The quote mentions that Ravi pays a student 50 euros a month for a specific task. However, this payment is for a different task (checking the chat) and not for a tool that handles shift swaps automatically. Therefore, it does not provide information about the willingness to pay for the specific tool mentioned in the hypothesis."
+    },
+    {
+      "hypothesis_id": "H4",
+      "kind": "counter",
+      "strength": "said",
+      "supports": false,
+      "quote": "I don't want to approve them, I want to know they're real. A swap should only count when both people confirm.",
+      "line": 7,
+      "interview_id": "i08-ravi-donuts",
+      "verified": true,
+      "verify_note": "",
+      "judge_reason": "Ravi explicitly states that he does not want to approve swaps, but rather wants to ensure that both people confirm the swap. This indicates that he is not willing to let staff swap shifts without some form of approval or confirmation."
+    }
+  ],
+  "dropped": [
+    {
+      "hypothesis_id": "H1",
+      "kind": "workaround",
+      "strength": "said",
+      "supports": true,
+      "quote": "Monday morning I print a template, fill it in pencil, then photograph it for the staff group. Then I redo it at least twice during the week.",
+      "line": 2,
+      "interview_id": "i05-amina-tea",
+      "verified": false,
+      "verify_note": "quote not found in interviewee speech",
+      "judge_reason": ""
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "pain",
+      "strength": "did",
+      "supports": false,
+      "quote": "Sunday evening, kitchen table, a paper grid and my phone.",
+      "line": 2,
+      "interview_id": "i01-lea-cafe",
+      "verified": true,
+      "verify_note": "judged irrelevant to H1: The quote describes the process of making the rota but does not specify the amount of time spent on it. It only mentions that it happens on Sunday evening, which is not enough to determine if it takes 3 or more hours.",
+      "judge_reason": "The quote describes the process of making the rota but does not specify the amount of time spent on it. It only mentions that it happens on Sunday evening, which is not enough to determine if it takes 3 or more hours."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "pain",
+      "strength": "did",
+      "supports": false,
+      "quote": "I called four people before Sarah picked up, and I opened alone for the first hour.",
+      "line": 7,
+      "interview_id": "i01-lea-cafe",
+      "verified": true,
+      "verify_note": "judged irrelevant to H1: The quoted evidence does not provide any information about the time Lea spent building and fixing staff rotas. It only describes the process of opening the cafe when Hugo was sick. There is no mention of the time spent on rotas.",
+      "judge_reason": "The quoted evidence does not provide any information about the time Lea spent building and fixing staff rotas. It only describes the process of opening the cafe when Hugo was sick. There is no mention of the time spent on rotas."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "workaround",
+      "strength": "said",
+      "supports": false,
+      "quote": "My wife does it in a spreadsheet.",
+      "line": 2,
+      "interview_id": "i02-marc-bakery",
+      "verified": true,
+      "verify_note": "judged irrelevant to H1: The quote 'My wife does it in a spreadsheet' does not specify the time spent on this task. The hypothesis states that independent cafe and bakery owners spend 3 or more hours a week building and fixing staff rotas. Since the quote does not provide the specific time, it does not confirm or deny the hypothesis.",
+      "judge_reason": "The quote 'My wife does it in a spreadsheet' does not specify the time spent on this task. The hypothesis states that independent cafe and bakery owners spend 3 or more hours a week building and fixing staff rotas. Since the quote does not provide the specific time, it does not confirm or deny the hypothesis."
+    },
+    {
+      "hypothesis_id": "H1",
+      "kind": "workaround",
+      "strength": "said",
+      "supports": false,
+      "quote": "Replacing her took six weeks and a 400-euro job ad.",
+      "line": 7,
+      "interview_id": "i06-jonas-roastery",
+      "verified": true,
+      "verify_note": "judged irrelevant to H1: The quote mentions that replacing Ines took six weeks and a 400-euro job ad. This suggests that the roastery is experiencing difficulties in finding and retaining staff, which implies that they might need to spend more time and resources on staff rotas. However, it does not directly state how much time Jonas or other independent cafe and bakery owners spend on building and fixing staff rotas.",
+      "judge_reason": "The quote mentions that replacing Ines took six weeks and a 400-euro job ad. This suggests that the roastery is experiencing difficulties in finding and retaining staff, which implies that they might need to spend more time and resources on staff rotas. However, it does not directly state how much time Jonas or other independent cafe and bakery owners spend on building and fixing staff rotas."
+    }
+  ],
+  "summaries": [
+    {
+      "hypothesis": {
+        "id": "H1",
+        "statement": "Independent cafe and bakery owners spend 3 or more hours a week building and fixing staff rotas."
+      },
+      "supporting": [
+        {
+          "hypothesis_id": "H1",
+          "kind": "workaround",
+          "strength": "did",
+          "supports": true,
+          "quote": "Every Thursday, it takes her most of the afternoon, three to four hours.",
+          "line": 2,
+          "interview_id": "i02-marc-bakery",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "The quote states that it takes Marc's wife three to four hours to plan the staff rotas every Thursday. This is more than three hours, which supports the hypothesis."
+        },
+        {
+          "hypothesis_id": "H1",
+          "kind": "workaround",
+          "strength": "said",
+          "supports": true,
+          "quote": "Ines handles it. Last month she worked eleven days in a row covering gaps, and then she quit.",
+          "line": 6,
+          "interview_id": "i06-jonas-roastery",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "The quote indicates that Ines worked eleven days in a row to cover gaps, which suggests that the cafe and bakery likely spend a significant amount of time managing staff rotas. However, it does not specify the exact number of hours Jonas or the cafe spends on this task. While it implies that a substantial amount of time is spent, it does not confirm that it is 3 or more hours a week."
+        }
+      ],
+      "weakening": [
+        {
+          "hypothesis_id": "H1",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "The grid itself, maybe an hour and a half.",
+          "line": 4,
+          "interview_id": "i01-lea-cafe",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Lea states that the grid itself takes 'maybe an hour and a half,' which is less than the 3 hours mentioned in the hypothesis. This suggests that the time spent on the grid itself is not 3 or more hours, but rather less."
+        },
+        {
+          "hypothesis_id": "H1",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "It's not a problem at all.",
+          "line": 3,
+          "interview_id": "i03-sofia-kiosk",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Sofia states that organizing the rota is not a problem and takes only ten minutes, which is less than the threshold of 3 hours per week."
+        },
+        {
+          "hypothesis_id": "H1",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "The rota is the same every week, I change it maybe once a month.",
+          "line": 2,
+          "interview_id": "i03-sofia-kiosk",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Sofia states that the rota is the same every week and she changes it maybe once a month. This suggests that she does not spend a significant amount of time (more than 3 hours a week) on building and fixing staff rotas."
+        },
+        {
+          "hypothesis_id": "H1",
+          "kind": "counter",
+          "strength": "did",
+          "supports": false,
+          "quote": "Building it, about an hour a week now, the app copies last week.",
+          "line": 4,
+          "interview_id": "i04-tomas-brunch",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Tomas states that he spends about an hour a week building the rota, which is less than the 3 hours mentioned in the hypothesis. The app copies last week's rota, reducing the time needed."
+        },
+        {
+          "hypothesis_id": "H1",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "I would pay around 15 euros a month. Twenty-five would be too much for us this year.",
+          "line": 13,
+          "interview_id": "i05-amina-tea",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Amina states that she would pay around 15 euros a month for a better system, which is less than 25 euros. This suggests that she does not currently spend 25 euros or more on staff rotas, and thus does not spend 3 or more hours a week on this task. Therefore, her statement is against the hypothesis."
+        },
+        {
+          "hypothesis_id": "H1",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "In summer it's chaos, in winter it's me and one person. The summer rota takes me maybe two hours a week.",
+          "line": 2,
+          "interview_id": "i07-claire-crepe",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Claire states that the summer rota takes her 'maybe two hours a week.' This is less than the 3 or more hours required by the hypothesis."
+        },
+        {
+          "hypothesis_id": "H1",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "A free calendar app.",
+          "line": 8,
+          "interview_id": "i07-claire-crepe",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Claire mentions using a free calendar app, which suggests she does not spend time manually building and fixing staff rotas. This implies she does not spend 3 or more hours a week on this task."
+        },
+        {
+          "hypothesis_id": "H1",
+          "kind": "counter",
+          "strength": "did",
+          "supports": false,
+          "quote": "I export last week from the till, adjust it in a spreadsheet, about two hours on Sunday.",
+          "line": 2,
+          "interview_id": "i08-ravi-donuts",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Ravi states that he spends about two hours on Sunday adjusting the rota. This is less than the three or more hours mentioned in the hypothesis."
+        }
+      ],
+      "score_for": 3,
+      "score_against": 10,
+      "interviews_covered": 8,
+      "challenge": {
+        "devils_advocate": "The current evidence is mixed, with some owners spending significant time and others spending minimal time, making it difficult to generalize. More consistent data from a larger sample size would be needed to confirm the hypothesis.",
+        "would_change_mind": "If two more owners provided detailed weekly logs showing they spend 3 or more hours each week on staff rotas, it would significantly strengthen the hypothesis."
+      }
+    },
+    {
+      "hypothesis": {
+        "id": "H2",
+        "statement": "Last-minute changes (sick calls, swaps, no-shows) hurt more than building the weekly rota."
+      },
+      "supporting": [
+        {
+          "hypothesis_id": "H2",
+          "kind": "pain",
+          "strength": "said",
+          "supports": true,
+          "quote": "Two or three times a week there's some change. Sick, exams, a bus strike.",
+          "line": 9,
+          "interview_id": "i01-lea-cafe",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Lea mentions that there are two or three changes per week due to sick calls, exams, and a bus strike. This supports the hypothesis that last-minute changes (sick calls, swaps, no-shows) happen frequently and can disrupt the weekly rota."
+        },
+        {
+          "hypothesis_id": "H2",
+          "kind": "pain",
+          "strength": "said",
+          "supports": true,
+          "quote": "Honestly the Sunday grid is fine, it's the 6 a.m. phone calls that make me want to sell the place.",
+          "line": 10,
+          "interview_id": "i01-lea-cafe",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Lea explicitly states that the 6 a.m. phone calls, which are likely referring to last-minute changes, are the issue that causes her distress. She even says it makes her want to sell the place, indicating a significant negative impact. The Sunday grid, on the other hand, is described as 'fine', suggesting that last-minute changes are the problem, not the regular schedule."
+        },
+        {
+          "hypothesis_id": "H2",
+          "kind": "pain",
+          "strength": "did",
+          "supports": true,
+          "quote": "A baker didn't show up in October. No message. We lost the morning bread for the second shop.",
+          "line": 5,
+          "interview_id": "i02-marc-bakery",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Marc describes a specific instance where a baker did not show up, resulting in lost morning bread for the second shop. This supports the idea that last-minute changes can have a negative impact on the operation."
+        },
+        {
+          "hypothesis_id": "H2",
+          "kind": "pain",
+          "strength": "did",
+          "supports": true,
+          "quote": "That cost us maybe 600 euros in sales, plus the customers who didn't come back.",
+          "line": 6,
+          "interview_id": "i02-marc-bakery",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "The quote indicates a significant financial loss due to a last-minute change (the baker not showing up). This supports the hypothesis that last-minute changes can be costly, as it resulted in a loss of sales and potential customer dissatisfaction."
+        },
+        {
+          "hypothesis_id": "H2",
+          "kind": "pain",
+          "strength": "said",
+          "supports": true,
+          "quote": "Swaps. The app lets people offer shifts, but half my staff ignore the notifications.",
+          "line": 6,
+          "interview_id": "i04-tomas-brunch",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Tomas mentions that half of his staff ignore the notifications for swaps, which suggests that last-minute changes (like swaps) are not being handled effectively. This implies that last-minute changes are causing issues, which aligns with the hypothesis that they hurt more than building the weekly rota."
+        },
+        {
+          "hypothesis_id": "H2",
+          "kind": "pain",
+          "strength": "did",
+          "supports": true,
+          "quote": "Last Saturday two people swapped in the app and nobody noticed one of them was a trainee. We were short at the grill.",
+          "line": 7,
+          "interview_id": "i04-tomas-brunch",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Tomas mentions that a swap in the app led to a short staff situation at the grill, which indicates that last-minute changes can cause issues. This supports the hypothesis that last-minute changes hurt more than building the weekly rota."
+        },
+        {
+          "hypothesis_id": "H2",
+          "kind": "pain",
+          "strength": "did",
+          "supports": true,
+          "quote": "Last week three people asked for changes on the same day. I spent my whole break on the phone.",
+          "line": 7,
+          "interview_id": "i05-amina-tea",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Amina mentions that last week, three people asked for changes on the same day, and she spent her whole break on the phone. This supports the hypothesis that last-minute changes can be time-consuming and disruptive, potentially hurting the process of building the weekly rota."
+        },
+        {
+          "hypothesis_id": "H2",
+          "kind": "pain",
+          "strength": "said",
+          "supports": true,
+          "quote": "Summer staff are tourists' kids, they cancel by text all the time.",
+          "line": 4,
+          "interview_id": "i07-claire-crepe",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Claire mentions that summer staff, who are tourists' kids, cancel by text all the time. This suggests that there are frequent last-minute changes, which supports the hypothesis that last-minute changes (sick calls, swaps, no-shows) hurt more than building the weekly rota."
+        },
+        {
+          "hypothesis_id": "H2",
+          "kind": "pain",
+          "strength": "did",
+          "supports": true,
+          "quote": "Last Friday we refunded 14 orders, around 230 euros, because two riders both thought the other was coming.",
+          "line": 5,
+          "interview_id": "i08-ravi-donuts",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "The evidence mentions that 14 orders were refunded due to a misunderstanding between two riders. This suggests that last-minute changes (in this case, a swap of delivery riders) can lead to issues and financial losses. This supports the hypothesis that last-minute changes hurt more than building the weekly rota."
+        }
+      ],
+      "weakening": [
+        {
+          "hypothesis_id": "H2",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "If someone is sick I just work the shift myself.",
+          "line": 5,
+          "interview_id": "i03-sofia-kiosk",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Sofia's statement indicates that she handles last-minute changes (in this case, a sick call) by working the shift herself. This suggests that last-minute changes do not significantly impact her, as she can easily accommodate them without additional effort or disruption to her schedule."
+        }
+      ],
+      "score_for": 14,
+      "score_against": 1,
+      "interviews_covered": 7,
+      "challenge": {
+        "devils_advocate": "While last-minute changes do seem to cause some pain, the evidence is thin and anecdotal. Many owners manage to work around these issues, suggesting they might not be as detrimental as perceived.",
+        "would_change_mind": "Two owners provide specific examples of how they have successfully managed last-minute changes without significant negative impact on their operations."
+      }
+    },
+    {
+      "hypothesis": {
+        "id": "H3",
+        "statement": "Owners will pay 20 EUR or more per month for a tool that handles shift swaps automatically."
+      },
+      "supporting": [
+        {
+          "hypothesis_id": "H3",
+          "kind": "willingness_to_pay",
+          "strength": "said",
+          "supports": true,
+          "quote": "If it checked the labour rules automatically, I would pay more than 20 euros, that's not the issue.",
+          "line": 15,
+          "interview_id": "i02-marc-bakery",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Marc states that he would pay more than 20 euros if the tool checked the labour rules automatically. This directly supports the hypothesis that owners will pay 20 EUR or more for a tool that handles shift swaps automatically, as checking labour rules is a feature of shift swap handling."
+        },
+        {
+          "hypothesis_id": "H3",
+          "kind": "willingness_to_pay",
+          "strength": "paid",
+          "supports": true,
+          "quote": "I pay 89 euros a month for it, and I've had it for two years.",
+          "line": 2,
+          "interview_id": "i04-tomas-brunch",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "The quote states that Tomas pays 89 euros a month for the scheduling app, which is more than 20 euros. This directly supports the hypothesis that owners will pay 20 EUR or more per month for a tool that handles shift swaps automatically."
+        },
+        {
+          "hypothesis_id": "H3",
+          "kind": "willingness_to_pay",
+          "strength": "said",
+          "supports": true,
+          "quote": "I'd pay 30 a month without thinking if it keeps my next shift lead from burning out.",
+          "line": 11,
+          "interview_id": "i06-jonas-roastery",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Jonas explicitly states that he would pay 30 EUR per month for the tool, which is more than the 20 EUR threshold mentioned in the hypothesis. He also mentions that this is without thinking, indicating a willingness to pay this amount."
+        }
+      ],
+      "weakening": [
+        {
+          "hypothesis_id": "H3",
+          "kind": "counter",
+          "strength": "paid",
+          "supports": false,
+          "quote": "I paid for one of those scheduling apps for three months, about 35 euros a month, then cancelled.",
+          "line": 12,
+          "interview_id": "i01-lea-cafe",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Lea paid 35 euros a month for a scheduling app, which is more than 20 euros. However, she cancelled the subscription after three months, indicating she did not continue to pay for it."
+        },
+        {
+          "hypothesis_id": "H3",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "I would not pay a monthly fee for three people, even five euros feels like too much.",
+          "line": 9,
+          "interview_id": "i03-sofia-kiosk",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Sofia explicitly states that she would not pay a monthly fee for three people, even at five euros. This is below the 20 EUR threshold mentioned in the hypothesis. Therefore, this statement makes the hypothesis less likely."
+        },
+        {
+          "hypothesis_id": "H3",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "I would pay around 15 euros a month. Twenty-five would be too much for us this year.",
+          "line": 13,
+          "interview_id": "i05-amina-tea",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Amina states that she would pay around 15 euros a month, which is less than the 20 euros threshold mentioned in the hypothesis. She also mentions that 25 euros would be too much, indicating that 20 euros is even higher than what she is willing to pay."
+        },
+        {
+          "hypothesis_id": "H3",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "I wouldn't pay for scheduling, the season is only four months.",
+          "line": 8,
+          "interview_id": "i07-claire-crepe",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Claire explicitly states that she wouldn't pay for scheduling software, which is below the 20 EUR per month threshold mentioned in the hypothesis. This directly contradicts the hypothesis."
+        },
+        {
+          "hypothesis_id": "H3",
+          "kind": "counter",
+          "strength": "paid",
+          "supports": false,
+          "quote": "I pay a student 50 euros a month to be the person who checks the chat every morning.",
+          "line": 9,
+          "interview_id": "i08-ravi-donuts",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "The quote mentions that Ravi pays a student 50 euros a month for a specific task. However, this payment is for a different task (checking the chat) and not for a tool that handles shift swaps automatically. Therefore, it does not provide information about the willingness to pay for the specific tool mentioned in the hypothesis."
+        }
+      ],
+      "score_for": 5,
+      "score_against": 9,
+      "interviews_covered": 8,
+      "challenge": {
+        "devils_advocate": "The current evidence is mixed, with only three owners willing to pay 20 EUR or more, and five against it, suggesting the hypothesis may not hold strong support.",
+        "would_change_mind": "If two additional owners in the next interviews explicitly state they would pay 20 EUR or more for a tool that handles shift swaps automatically, it would significantly strengthen the hypothesis."
+      }
+    },
+    {
+      "hypothesis": {
+        "id": "H4",
+        "statement": "Owners are willing to let staff swap shifts among themselves without approving each swap."
+      },
+      "supporting": [
+        {
+          "hypothesis_id": "H4",
+          "kind": "pain",
+          "strength": "said",
+          "supports": true,
+          "quote": "For the morning shift, yes, I need someone who can run the machine alone. Afternoons I don't care.",
+          "line": 16,
+          "interview_id": "i01-lea-cafe",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Lea explicitly states that she does not need to approve shift swaps for the afternoon shift. This directly supports the hypothesis that owners are willing to let staff swap shifts among themselves without approving each swap."
+        },
+        {
+          "hypothesis_id": "H4",
+          "kind": "workaround",
+          "strength": "did",
+          "supports": true,
+          "quote": "They already do. They tell me after, and that's fine, I trust them completely.",
+          "line": 11,
+          "interview_id": "i03-sofia-kiosk",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Sofia explicitly states that her staff already swap shifts among themselves and that she trusts them to do so without her approval. This directly supports the hypothesis that owners are willing to let staff swap shifts without individual approval."
+        },
+        {
+          "hypothesis_id": "H4",
+          "kind": "willingness_to_pay",
+          "strength": "said",
+          "supports": true,
+          "quote": "Yes, as long as the shift lead gets a summary. Approving each one is exactly what burned Ines out.",
+          "line": 13,
+          "interview_id": "i06-jonas-roastery",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Jonas explicitly states that staff should be allowed to swap shifts without approval, as long as the shift lead gets a summary. This directly supports the hypothesis that owners are willing to let staff swap shifts among themselves without approving each swap."
+        }
+      ],
+      "weakening": [
+        {
+          "hypothesis_id": "H4",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "Never for the bakers. A swap that breaks the 11-hour rest rule is our liability, not theirs.",
+          "line": 10,
+          "interview_id": "i02-marc-bakery",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Marc explicitly states that he would never let the bakers swap shifts without his wife confirming, which directly contradicts the hypothesis that owners are willing to let staff swap shifts without approval."
+        },
+        {
+          "hypothesis_id": "H4",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "I switched approvals off last year because it was too much clicking.",
+          "line": 9,
+          "interview_id": "i04-tomas-brunch",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Tomas mentions that he switched off shift swap approvals because it was too much clicking. This suggests that he is not willing to let staff swap shifts without his approval, as it requires too much effort for him."
+        },
+        {
+          "hypothesis_id": "H4",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "No. I've had a swap where the replacement was a friend who had never worked here. Never again.",
+          "line": 10,
+          "interview_id": "i07-claire-crepe",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Claire explicitly states that she would not let staff swap shifts freely and provides an example of a bad experience with a friend who had never worked there. This directly contradicts the hypothesis that owners are willing to let staff swap shifts without approval."
+        },
+        {
+          "hypothesis_id": "H4",
+          "kind": "counter",
+          "strength": "said",
+          "supports": false,
+          "quote": "I don't want to approve them, I want to know they're real. A swap should only count when both people confirm.",
+          "line": 7,
+          "interview_id": "i08-ravi-donuts",
+          "verified": true,
+          "verify_note": "",
+          "judge_reason": "Ravi explicitly states that he does not want to approve swaps, but rather wants to ensure that both people confirm the swap. This indicates that he is not willing to let staff swap shifts without some form of approval or confirmation."
+        }
+      ],
+      "score_for": 4,
+      "score_against": 4,
+      "interviews_covered": 7,
+      "challenge": {
+        "devils_advocate": "The current evidence is mixed, but the owners who explicitly stated they do not allow staff to swap shifts without approval seem to have valid safety and trust concerns that cannot be overlooked.",
+        "would_change_mind": "Two owners provide specific examples where staff swaps led to issues, such as a friend replacing someone without experience, or a swap that violated work hour rules."
+      }
+    }
+  ],
+  "usage": {
+    "calls": 51,
+    "failed_calls": 0,
+    "prompt_tokens": 19830,
+    "completion_tokens": 5314,
+    "seconds": 1570.2,
+    "backends": [
+      "llamacpp:qwen2.5-7b-instruct-q4_k_m.gguf"
+    ]
+  },
+  "calls": [
+    {
+      "stage": "extract:i01-lea-cafe",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 758,
+      "completion_tokens": 406,
+      "seconds": 114.83478236198425,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "extract:i02-marc-bakery",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 670,
+      "completion_tokens": 352,
+      "seconds": 95.62638258934021,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "extract:i03-sofia-kiosk",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 570,
+      "completion_tokens": 272,
+      "seconds": 71.68407225608826,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "extract:i04-tomas-brunch",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 608,
+      "completion_tokens": 288,
+      "seconds": 80.00761556625366,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "extract:i05-amina-tea",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 613,
+      "completion_tokens": 260,
+      "seconds": 73.15069675445557,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "extract:i06-jonas-roastery",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 578,
+      "completion_tokens": 249,
+      "seconds": 69.39649701118469,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "extract:i07-claire-crepe",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 535,
+      "completion_tokens": 284,
+      "seconds": 76.17507886886597,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "extract:i08-ravi-donuts",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 582,
+      "completion_tokens": 253,
+      "seconds": 66.69608545303345,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i01-lea-cafe:H1:L2",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 309,
+      "completion_tokens": 65,
+      "seconds": 22.680676460266113,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i01-lea-cafe:H1:L4",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 321,
+      "completion_tokens": 68,
+      "seconds": 18.48383855819702,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i01-lea-cafe:H1:L7",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 340,
+      "completion_tokens": 65,
+      "seconds": 18.32520890235901,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i01-lea-cafe:H2:L9",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 326,
+      "completion_tokens": 70,
+      "seconds": 20.861382961273193,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i01-lea-cafe:H2:L10",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 343,
+      "completion_tokens": 95,
+      "seconds": 27.998310089111328,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i01-lea-cafe:H3:L12",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 345,
+      "completion_tokens": 60,
+      "seconds": 19.439759016036987,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i01-lea-cafe:H4:L16",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 344,
+      "completion_tokens": 56,
+      "seconds": 19.00650715827942,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i02-marc-bakery:H1:L2",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 304,
+      "completion_tokens": 51,
+      "seconds": 16.392650604248047,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i02-marc-bakery:H1:L2",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 296,
+      "completion_tokens": 82,
+      "seconds": 20.90347409248352,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i02-marc-bakery:H2:L5",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 341,
+      "completion_tokens": 57,
+      "seconds": 19.223910570144653,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i02-marc-bakery:H2:L6",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 337,
+      "completion_tokens": 62,
+      "seconds": 19.878844022750854,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i02-marc-bakery:H3:L15",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 346,
+      "completion_tokens": 74,
+      "seconds": 22.502968549728394,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i02-marc-bakery:H4:L10",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 329,
+      "completion_tokens": 53,
+      "seconds": 18.21816658973694,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i03-sofia-kiosk:H1:L3",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 311,
+      "completion_tokens": 49,
+      "seconds": 15.489137887954712,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i03-sofia-kiosk:H1:L2",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 302,
+      "completion_tokens": 68,
+      "seconds": 18.57455563545227,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i03-sofia-kiosk:H2:L5",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 315,
+      "completion_tokens": 71,
+      "seconds": 21.505808115005493,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i03-sofia-kiosk:H3:L9",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 329,
+      "completion_tokens": 63,
+      "seconds": 18.90944528579712,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i03-sofia-kiosk:H4:L11",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 324,
+      "completion_tokens": 60,
+      "seconds": 18.172097206115723,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i04-tomas-brunch:H1:L4",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 338,
+      "completion_tokens": 60,
+      "seconds": 19.702422380447388,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i04-tomas-brunch:H2:L6",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 328,
+      "completion_tokens": 74,
+      "seconds": 23.460700035095215,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i04-tomas-brunch:H2:L7",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 337,
+      "completion_tokens": 63,
+      "seconds": 18.898186206817627,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i04-tomas-brunch:H3:L2",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 308,
+      "completion_tokens": 69,
+      "seconds": 21.53312039375305,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i04-tomas-brunch:H4:L9",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 318,
+      "completion_tokens": 59,
+      "seconds": 18.165775537490845,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i05-amina-tea:H1:L13",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 344,
+      "completion_tokens": 89,
+      "seconds": 26.860360860824585,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i05-amina-tea:H2:L7",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 332,
+      "completion_tokens": 70,
+      "seconds": 21.660181283950806,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i05-amina-tea:H3:L13",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 344,
+      "completion_tokens": 77,
+      "seconds": 23.062393188476562,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i06-jonas-roastery:H1:L6",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 328,
+      "completion_tokens": 99,
+      "seconds": 28.960073471069336,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i06-jonas-roastery:H1:L7",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 333,
+      "completion_tokens": 98,
+      "seconds": 28.26221203804016,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i06-jonas-roastery:H3:L11",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 330,
+      "completion_tokens": 67,
+      "seconds": 19.704665184020996,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i06-jonas-roastery:H4:L13",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 333,
+      "completion_tokens": 63,
+      "seconds": 19.644326210021973,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i07-claire-crepe:H1:L2",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 317,
+      "completion_tokens": 49,
+      "seconds": 15.46340823173523,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i07-claire-crepe:H1:L8",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 311,
+      "completion_tokens": 58,
+      "seconds": 16.04283571243286,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i07-claire-crepe:H2:L4",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 331,
+      "completion_tokens": 75,
+      "seconds": 21.805622577667236,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i07-claire-crepe:H3:L8",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 320,
+      "completion_tokens": 53,
+      "seconds": 17.33209800720215,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i07-claire-crepe:H4:L10",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 327,
+      "completion_tokens": 65,
+      "seconds": 19.764878511428833,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i08-ravi-donuts:H1:L2",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 305,
+      "completion_tokens": 47,
+      "seconds": 15.333211660385132,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i08-ravi-donuts:H2:L5",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 344,
+      "completion_tokens": 77,
+      "seconds": 22.894432306289673,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i08-ravi-donuts:H3:L9",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 339,
+      "completion_tokens": 83,
+      "seconds": 25.24385666847229,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "judge:i08-ravi-donuts:H4:L7",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 343,
+      "completion_tokens": 62,
+      "seconds": 19.745203256607056,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "challenge:H1",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 549,
+      "completion_tokens": 85,
+      "seconds": 33.852370738983154,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "challenge:H2",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 591,
+      "completion_tokens": 75,
+      "seconds": 28.658305168151855,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "challenge:H3",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 520,
+      "completion_tokens": 84,
+      "seconds": 31.022160053253174,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    },
+    {
+      "stage": "challenge:H4",
+      "backend": "llamacpp",
+      "model": "qwen2.5-7b-instruct-q4_k_m.gguf",
+      "prompt_tokens": 484,
+      "completion_tokens": 80,
+      "seconds": 29.028353929519653,
+      "ok": true,
+      "attempt": 1,
+      "error": ""
+    }
+  ]
+}

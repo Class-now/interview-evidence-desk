@@ -1,0 +1,10 @@
+[
+  {"hypothesis_id": "H1", "decision": "reject",
+   "reason": "Amina (4-5 h) and Marc's wife (3-4 h) do reach it - Amina's line is in the missed-figures list - but 5 of 8 are at 10 min to 2 h. Building the rota is not the main pain."},
+  {"hypothesis_id": "H2", "decision": "accept",
+   "reason": "Real losses already happened: Marc about 600 EUR of bread sales, Ravi 230 EUR of refunds, Jonas lost his shift lead (six weeks and a 400 EUR ad to replace her)."},
+  {"hypothesis_id": "H3", "decision": "doubt",
+   "reason": "Tomas pays 89 EUR and Ravi pays a student 50 EUR a month for the same job (the model filed Ravi as against). The small shops say no. Price may depend on size, not on swaps."},
+  {"hypothesis_id": "H4", "decision": "reject",
+   "reason": "The model got Tomas wrong (switching approvals off supports H4), but Marc, Claire, Ravi and Lea's mornings all want a check. Build confirmed swaps, not free swaps."}
+]

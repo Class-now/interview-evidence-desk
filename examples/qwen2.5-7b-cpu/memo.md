@@ -1,6 +1,6 @@
 # Validation memo - 2026-11-16 13:32
 
-Decided by: **Demo founder** (human). Evidence prepared by Interview Evidence Desk from 8 interviews; 5 model-proposed quotes were rejected because they did not appear in the transcripts.
+Decided by: **Demo founder** (human). Evidence prepared by Interview Evidence Desk from 8 interviews; 5 model-proposed quotes were set aside: 1 not found in the transcripts, 4 judged irrelevant.
 
 ## H1: Independent cafe and bakery owners spend 3 or more hours a week building and fixing staff rotas.
 - **Decision: REJECT** - Amina (4-5 h) and Marc's wife (3-4 h) do reach it - Amina's line is in the missed-figures list - but 5 of 8 are at 10 min to 2 h. Building the rota is not the main pain.

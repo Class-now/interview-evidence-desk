@@ -79,11 +79,26 @@ def load_recorded():
     state["n"] = saved["n_interviews"]
     state["ledger"] = Ledger()
     hyps = [s.hypothesis for s in state["summaries"]]
-    return _show(state, hyps, saved["usage"], f"Recorded run from `{RECORDED.parent.name}/` (not re-computed). ")
+    return _show(state, hyps, saved["usage"], f"Recorded run from `{RECORDED.parent.name}/` (not re-computed). ",
+                 full_calls=_recorded_full_calls())
 
 
-def _show(state, hyps, t, prefix):
-    usage = (f"{prefix}Model calls: {t['calls']} ({t['failed_calls']} retried/failed) - tokens in {t['prompt_tokens']:,} / "
+def _recorded_full_calls():
+    """Calls of the whole recorded run (run.json, including next-round questions), if it was saved."""
+    try:
+        return json.loads((RECORDED.parent / "run.json").read_text(encoding="utf-8"))["usage"]["calls"]
+    except (OSError, ValueError, KeyError):
+        return None
+
+
+def _calls_text(t, full_calls=None):
+    if full_calls and full_calls != t["calls"]:
+        return f"Model calls: {t['calls']} up to the checkpoint ({full_calls} including next-round questions)"
+    return f"Model calls: {t['calls']}"
+
+
+def _show(state, hyps, t, prefix, full_calls=None):
+    usage = (f"{prefix}{_calls_text(t, full_calls)} ({t['failed_calls']} retried/failed) - tokens in {t['prompt_tokens']:,} / "
              f"out {t['completion_tokens']:,} - {t['seconds']} s - {', '.join(t['backends']) or 'none'}")
     updates = []
     for i in range(MAX_H):
@@ -112,7 +127,7 @@ def finish(state, founder, *vals):
     router = build_router(None, ledger)
     qs, rejected_q = next_questions(router, state["summaries"], by_id)
     state["rejected_questions"] = rejected_q
-    md = memo(state["summaries"], by_id, qs, founder or "Founder", state["n"], len(state["dropped"]),
+    md = memo(state["summaries"], by_id, qs, founder or "Founder", state["n"], state["dropped"],
               rejected_questions=len(rejected_q))
     out = Path(tempfile.gettempdir()) / f"ied-run-{dt.datetime.now():%Y%m%d-%H%M%S}.json"
     save_run(out, state, decisions, qs, md, ledger.totals(), ledger.calls)

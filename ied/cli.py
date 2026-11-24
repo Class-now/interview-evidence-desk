@@ -71,7 +71,7 @@ def cmd_finish(a) -> int:
     router = build_router(a.backends, ledger)
     questions, rejected_q = next_questions(router, state["summaries"], by_id)
     state["rejected_questions"] = rejected_q
-    md = memo(state["summaries"], by_id, questions, a.founder, saved["n_interviews"], len(state["dropped"]),
+    md = memo(state["summaries"], by_id, questions, a.founder, saved["n_interviews"], state["dropped"],
               rejected_questions=len(rejected_q))
     (run / "memo.md").write_text(md, encoding="utf-8")
     usage = saved["usage"]

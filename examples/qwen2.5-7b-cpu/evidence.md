@@ -1,6 +1,6 @@
 # Evidence board
 
-Interviews processed: 8/8. Verified quotes: 35. Rejected (not found in transcript): 5.
+Interviews processed: 8/8. Verified quotes: 35. Rejected: 5 (1 not found in transcript, 4 judged irrelevant).
 
 | Hypothesis | Lean | For | Against | Interviews |
 |---|---|---|---|---|

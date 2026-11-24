@@ -4,10 +4,35 @@ from __future__ import annotations
 from .schemas import STRENGTH_WEIGHT
 
 
+def rejected_counts(dropped) -> dict:
+    """Split set-aside model quotes by reason (read from the start of verify_note)."""
+    c = {"not_found": 0, "irrelevant": 0, "other": 0}
+    for e in dropped:
+        note = (e.verify_note if hasattr(e, "verify_note") else e.get("verify_note", "")) or ""
+        if note.startswith("quote not found"):
+            c["not_found"] += 1
+        elif note.startswith("judged irrelevant"):
+            c["irrelevant"] += 1
+        else:
+            c["other"] += 1
+    return c
+
+
+def rejected_parts(dropped, not_found_label: str = "not found in transcript") -> str:
+    """'1 not found in transcript, 4 judged irrelevant' (zero counts left out, except when all are zero)."""
+    c = rejected_counts(dropped)
+    parts = [f"{c['not_found']} {not_found_label}" if c["not_found"] else "",
+             f"{c['irrelevant']} judged irrelevant" if c["irrelevant"] else "",
+             f"{c['other']} other" if c["other"] else ""]
+    return ", ".join(x for x in parts if x)
+
+
 def evidence_markdown(state: dict, n_interviews: int) -> str:
+    n_drop = len(state["dropped"])
+    rejected = f"Rejected: {n_drop}" + (f" ({rejected_parts(state['dropped'])})" if n_drop else "")
     out = ["# Evidence board", "",
            f"Interviews processed: {len(state['processed'])}/{n_interviews}. "
-           f"Verified quotes: {len(state['kept'])}. Rejected (not found in transcript): {len(state['dropped'])}.", "",
+           f"Verified quotes: {len(state['kept'])}. {rejected}.", "",
            "| Hypothesis | Lean | For | Against | Interviews |", "|---|---|---|---|---|"]
     for s in state["summaries"]:
         out.append(f"| {s.hypothesis.id} | {s.lean} | {s.score_for} ({len(s.supporting)} quotes) | "

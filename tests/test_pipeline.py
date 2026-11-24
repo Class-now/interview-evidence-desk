@@ -122,8 +122,8 @@ def test_end_to_end_with_fake_backend(ivs, hyps):
     by = {s.hypothesis.id: s for s in st["summaries"]}
     assert by["H2"].challenge.devils_advocate
     dec = {h.id: HumanDecision(hypothesis_id=h.id, decision="doubt", reason="need more") for h in hyps}
-    md = memo(st["summaries"], dec, ["Tell me about the last sick call."], "Test", 8, len(st["dropped"]))
-    assert "DOUBT" in md and "8 model-proposed quotes were rejected" in md
+    md = memo(st["summaries"], dec, ["Tell me about the last sick call."], "Test", 8, st["dropped"])
+    assert "DOUBT" in md and "8 model-proposed quotes were set aside: 8 not found in the transcripts" in md
     assert led.totals()["calls"] == 8 + 1 + 4
     assert st["kept"][0].strength == "said"  # "paid" without money spent is downgraded
 
@@ -161,3 +161,17 @@ def test_hypothesis_ids_are_constrained_and_normalised():
              if "hypothesis_id" in d.get("properties", {})]
     assert enums == [["H1", "H2"]]
     assert [normalise_hypothesis_id(x, hyps) for x in ("h1", "2", "H 2", "i02", "H3")] == ["H1", "H2", "H2", "i02", "H3"]
+
+
+def test_rejected_count_splits_not_found_and_irrelevant():
+    """The board and memo must not call irrelevant quotes 'not found' (7B example: 1 not found + 4 irrelevant)."""
+    from ied.cli import _load_state
+    from ied.report import evidence_markdown, rejected_counts
+    run = Path(__file__).resolve().parents[1] / "examples" / "qwen2.5-7b-cpu"
+    saved = json.loads((run / "analysis.json").read_text(encoding="utf-8"))
+    st = _load_state(saved)
+    assert rejected_counts(st["dropped"]) == {"not_found": 1, "irrelevant": 4, "other": 0}
+    board = evidence_markdown(st, saved["n_interviews"])
+    assert "Rejected: 5 (1 not found in transcript, 4 judged irrelevant)." in board
+    assert board.splitlines()[2] == (run / "evidence.md").read_text(encoding="utf-8").splitlines()[2]
+    assert "set aside: 1 not found in the transcripts, 4 judged irrelevant" in (run / "memo.md").read_text(encoding="utf-8")

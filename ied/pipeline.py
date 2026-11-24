@@ -315,13 +315,24 @@ def next_questions(router: Router, summaries: list[HypothesisSummary], decisions
 
 # ---------------------------------------------------------------- stage 7: memo (deterministic)
 
+def _dropped_sentence(dropped) -> str:
+    """dropped: the list of set-aside Evidence (preferred) or just their number."""
+    from .report import rejected_parts
+    if isinstance(dropped, int):
+        return f"{dropped} model-proposed quotes were set aside"
+    n = len(dropped)
+    if not n:
+        return "no model-proposed quotes were set aside"
+    return f"{n} model-proposed quotes were set aside: {rejected_parts(dropped, 'not found in the transcripts')}"
+
+
 def memo(summaries: list[HypothesisSummary], decisions: dict[str, HumanDecision], questions: list[str],
-         founder: str, n_interviews: int, dropped: int, when: Optional[str] = None,
+         founder: str, n_interviews: int, dropped, when: Optional[str] = None,
          rejected_questions: int = 0) -> str:
     when = when or dt.datetime.now().strftime("%Y-%m-%d %H:%M")
     out = [f"# Validation memo - {when}", "",
            f"Decided by: **{founder}** (human). Evidence prepared by Interview Evidence Desk from {n_interviews} "
-           f"interviews; {dropped} model-proposed quotes were rejected because they did not appear in the transcripts.", ""]
+           f"interviews; {_dropped_sentence(dropped)}.", ""]
     for s in summaries:
         d = decisions[s.hypothesis.id]
         out += [f"## {s.hypothesis.id}: {s.hypothesis.statement}",

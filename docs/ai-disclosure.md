@@ -6,7 +6,7 @@
 |---|---|---|---|---|
 | Qwen2.5-3B-Instruct, Q4_K_M GGUF (default) | Alibaba Cloud Qwen team, Apache-2.0, open weights, run locally with llama.cpp | extract quotes, judge each quote, devil's advocate, next questions | free (local) | 45 calls, 17,696 prompt + 5,046 completion tokens, 731 s on a 4-core CPU |
 | Qwen2.5-7B-Instruct, Q4_K_M GGUF (optional, better quality) | Alibaba Cloud Qwen team, Apache-2.0, open weights, local llama.cpp or Ollama | same | free (local) | 52 calls, 20,415 prompt + 5,410 completion tokens, 1,609 s on a 4-core CPU |
-| Gemini 2.0 Flash (optional fall-back) | Google, Gemini API free tier | same | free tier only | same number of calls |
+| Gemini Flash, `gemini-flash-latest` alias (optional fall-back) | Google, Gemini API free tier | same | free tier only | same number of calls |
 | Llama 3.1 8B Instant (optional fall-back) | Meta weights, served by Groq free tier | same | free tier only | same number of calls |
 
 * No paid model, paid credit or paid plan is used when the product runs.

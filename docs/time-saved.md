@@ -29,9 +29,10 @@ Second run, same machine, **Qwen2.5-7B-Instruct Q4_K_M** (`examples/qwen2.5-7b-c
 | next questions | 1 | 38 s |
 | **Total** | **52** (0 failed) | **1,609 s ≈ 27 min**, unattended |
 
-Tokens: 20,415 in / 5,410 out. Cost: 0. The 7B model found 35 verified quotes covering 8/8 interviews for
-three of the four hypotheses (3B: 30), and only 1 quote was rejected as not in the transcript (3B: 4).
-On a laptop with a GPU, or with the Gemini free tier, the machine time drops to roughly 1–2 minutes.
+Tokens: 20,415 in / 5,410 out. Cost: 0. The 7B model kept 35 checked quotes (3B: 30), drawn from 8/8
+interviews for H1 and H3 and 7/8 for H2 and H4. The quote check rejected 1 quote as not in the transcript
+(3B: 2, the same sentence proposed for two hypotheses); a further 4 (3B: 2) were judged irrelevant and listed.
+We have not timed a GPU or cloud run; with a GPU the machine time should be a few minutes, but that is an estimate.
 
 ## Founder time: before and after
 

@@ -24,7 +24,7 @@ transcripts + hypotheses
    ▼  7. memo             (no LLM: one-page decision memo naming who decided and citing interview + line for every quote)
 ```
 
-* **No invented quotes.** The model proposes quotes with line numbers; deterministic code checks each one
+* **Every quote is in the transcript.** The model proposes quotes with line numbers; deterministic code checks each one
   against the transcript (normalising quotes/ellipses, rejecting words spoken by the interviewer, correcting
   off-by-one line numbers). Rejected output is shown on the evidence board, not hidden.
 * **Small-model aware.** A 3B model is good at finding sentences and bad at judging them in bulk, so stance is

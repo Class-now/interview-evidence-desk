@@ -104,7 +104,7 @@ class OpenAICompatBackend(Backend):
     """Gemini free tier and Groq free tier both expose an OpenAI-compatible chat endpoint."""
 
     PRESETS = {
-        "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY", "gemini-2.0-flash"),
+        "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY", "gemini-flash-latest"),
         "groq": ("https://api.groq.com/openai/v1", "GROQ_API_KEY", "llama-3.1-8b-instant"),
     }
 
